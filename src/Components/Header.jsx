@@ -12,7 +12,7 @@ const HeaderStyled = styled.header`
   background-size: cover;
   background-position-y: 100%;
   .header-content {
-    padding: 0 10rem;
+    padding: 2rem 18rem;
   }
 `;
 
