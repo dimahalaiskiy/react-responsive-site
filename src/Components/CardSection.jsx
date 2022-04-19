@@ -6,11 +6,18 @@ import card from '../img/creditcard.svg';
 const CardSectionStyled = styled.section`
   .card-container {
     display: grid;
+    grid-gap: 20px;
     grid-template-columns: repeat(2, 1fr);
-
+    @media screen and (max-width: 845px) {
+      grid-template-columns: repeat(1, 1fr);
+    }
     .card-right {
       display: flex;
-      justify-content: flex-end;
+      align-items: center;
+      @media screen and (max-width: 845px) {
+        display: block;
+        margin: 0 auto;
+      }
     }
 
     .card-left {
@@ -27,11 +34,14 @@ const CardSection = () => {
       <InnerLayout>
         <div className='card-container'>
           <div className='card-left'>
-            <h2 className='secondary-heading'>One card for all your payments</h2>
+            <h2 className='secondary-heading'>
+              One card for all your payments
+            </h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, libero eligendi
-              sequi nisi earum labore doloribus ullam, nulla, voluptatibus repellendus aut? Nihil
-              nemo voluptates quae?
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Similique, libero eligendi sequi nisi earum labore doloribus
+              ullam, nulla, voluptatibus repellendus aut? Nihil nemo voluptates
+              quae?
             </p>
           </div>
           <div className='card-right'>

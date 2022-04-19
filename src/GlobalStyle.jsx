@@ -32,6 +32,12 @@ const GlobalStyle = createGlobalStyle`
     .secondary-heading{
         font-size: 3rem;
         color: var(--purple-primary);
+        @media screen and (max-width: 1260px) {
+            font-size: 2.5rem;
+      }
+      @media screen and (max-width: 845px) {
+            font-size: 2rem;
+      }
         
     }
     .small-heading{
